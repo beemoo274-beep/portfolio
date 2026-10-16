@@ -67,5 +67,24 @@ contactStyles.textContent = `
 .contact-card .btn-primary { background: #fff; color: #4338ca; box-shadow: none; }
 .contact-card .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, 0.6); }
 .contact-card .btn-ghost:hover { color: #fff; border-color: #fff; }
+
+[data-theme="dark"] {
+--accent: #818cf8;
+--accent-2: #f472b6;
+--accent-3: #22d3ee;
+--bg: #0b1020;
+--bg-alt: #111833;
+--surface: #151c34;
+--text: #e2e8f0;
+--muted: #94a3b8;
+--border: #263154;
+--shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+--nav-bg: rgba(11, 16, 32, 0.75);
+--chip-bg: #1e2748;
+--chip-text: #c7d2fe;
+--bot-bubble: #1e2748;
+--glow-1: rgba(129, 140, 248, 0.32);
+--glow-2: rgba(244, 114, 182, 0.20);
+}
 `;
 document.head.appendChild(contactStyles);
