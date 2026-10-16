@@ -54,3 +54,18 @@ revealObserver.unobserve(entry.target); // animate only once
 document.querySelectorAll(".reveal").forEach(function (el) { revealObserver.observe(el); });
 // ---------- 6. Current year in the footer ----------
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Contact styles are injected here because this file is JavaScript.
+const contactStyles = document.createElement("style");
+contactStyles.textContent = `
+.contact-card {
+	text-align: center; padding: 3rem 1.5rem; border-radius: 24px; color: #fff;
+	background: var(--gradient); box-shadow: 0 20px 50px rgba(99, 102, 241, 0.35);
+}
+.contact-card p { opacity: 0.92; }
+.contact-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 1.5rem; }
+.contact-card .btn-primary { background: #fff; color: #4338ca; box-shadow: none; }
+.contact-card .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, 0.6); }
+.contact-card .btn-ghost:hover { color: #fff; border-color: #fff; }
+`;
+document.head.appendChild(contactStyles);
