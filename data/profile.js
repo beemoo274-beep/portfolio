@@ -3,8 +3,8 @@
 // ⚠️ This file is PUBLIC. Never add your home address, phone number, birthday,
 // school ID, passwords, or API keys.
 const profile = {
-name: "Juan Dela Cruz", // EXAMPLE ONLY — change to your name
-shortName: "Juan",
+name: "Mae Pangilinan", // EXAMPLE ONLY — change to your name
+shortName: "Mae",
 role: "Grade 12 student & aspiring web developer",
 location: "Philippines",
 about:
@@ -47,7 +47,7 @@ hobbies: ["drawing", "mobile games", "playing basketball"],
 goals: "I want to take up Computer Science in college and become a full-stack developer.",
 ojt: "Work immersion intern (developer) with a software & AI dev team, Oct 12–30, 2026.",
 contact: {
-email: "juan.delacruz@example.com", // use a school/public email only
+email: "beemoo274@gmail.com", // use a school/public email only
 github: "https://github.com/your-username"
 }
 };

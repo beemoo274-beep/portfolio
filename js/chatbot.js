@@ -14,7 +14,7 @@ return items.slice(0, -1).join(", ") + " and " + items[items.length - 1];
 const qa = {
 greeting: {
 keywords: ["hello", "hi", "hey", "kumusta", "musta", "good morning", "good afternoon"],
-answer: `Hi! 👋 I'm ${profile.shortName}'s assistant. Ask me about skills, education, projects, or
+answer: `Hi! 🎀 I'm ${profile.shortName}'s assistant. Ask me about skills, education, projects, or
 contact info.`
 },
 about: {
@@ -57,7 +57,7 @@ keywords: ["thank", "thanks", "salamat", "ty"],
 answer: "You're welcome! 😊 Anything else you'd like to know?"
 }
 };
-const fallback = "Hmm,  not sure about that yet 🤔. Try asking about my skills, education, projects, or how to contact me!";
+const fallback = "Hmm, I'm not sure about that yet 🤔. Try asking about my skills, education, projects, or how to contact me!";
 
 // ---------- 3. Find the best rule-based reply ----------
 // Each topic gets a score = how many of its keywords appear. Highest score wins.
