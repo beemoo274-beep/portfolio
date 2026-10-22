@@ -1,4 +1,5 @@
 {
+"$schema": "https://json.schemastore.org/package.json",
 "name": "portfolio-starter",
 "private": true,
 "type": "module",

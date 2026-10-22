@@ -25,7 +25,7 @@ The sample content is for a fictional student, **Juan Dela Cruz**. Replace it wi
 1. Open the folder in VS Code.
 2. Right-click `index.html` → **Open with Live Server**.
 (Double-clicking the file won't work, because the chatbot uses JS modules, which need a server.)
-3. The chatbot shows **⚡ Basic mode** locally. That's expected, because `/api/chat` only runs on Vercel.
+3. The chatbot shows ** 💕 Basic mode** locally. That's expected, because `/api/chat` only runs on Vercel.
 ## 2. Make it yours (checklist)
 - [ ] `index.html`: `<title>`, name, tagline, about text, quick facts, skills, timeline, projects, links,
 footer
