@@ -3,7 +3,7 @@
 import profile from "../data/profile.js";
 // Free model id. Model ids change! Check openrouter.ai/models?max_price=0
 // You can override it with an OPENROUTER_MODEL env var in Vercel (no code change).
-const MODEL = process.env.OPENROUTER_MODEL || "google/gemma-4-31b-it:free";
+const MODEL = process.env.OPENROUTER_MODEL || "recursive/flint-v1.0:free";
 export default async function handler(req, res) {
 if (req.method !== "POST") {
 return res.status(405).json({ error: "Use POST" });
@@ -24,7 +24,6 @@ say you don't know and suggest asking about skills, education, or projects.
 Never make things up. Keep answers short (1-3 sentences).
 INFORMATION:
 ${JSON.stringify(profile, null, 2)}`;
-
 try {
 const aiResponse = await fetch("https://openrouter.ai/api/v1/chat/completions", {
 method: "POST",
@@ -58,4 +57,3 @@ return res.status(200).json({ reply });
 return res.status(502).json({ error: "Could not reach the AI" });
 }
 }
-
